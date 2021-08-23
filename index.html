@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="templatemo-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Mini Project - Mansoor Majeed</title>
+    
+  </head>
+  <body>
+
+    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="mini-profile-bg-01.jpg">
+      <div class="container-fluid tm-brand-container-outer">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
+              <div class="tm-brand-container text-center">
+                <h1 class="tm-brand-name">Mini Project</h1>
+                <p class="tm-brand-description mb-0">piano&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stop watch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alarm Clock</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tm-bg-white-transparent tm-welcome-container">
+        <div class="container-fluid">
+          <div class="row h-100">
+
+            <div class="col-md-7 tm-welcome-left-col">
+              <div class="tm-welcome-left">
+                <h2 class="tm-welcome-title">Welcome to Mini WebPage</h2>
+                <p class="pb-0">
+                   This is a WebPage containing three interesting features.<br>
+                   Musical Piano, Stop Watch and an Alarm Clock.<br>
+                   (Three in one Hand)  
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="tm-welcome-right">
+                <center>
+                <i class="material-icons" style="font-size:100px;color:black">contacts</i>
+                <h3>.... ABOUT ME ....</h3>
+                </center>
+                <p class="mb-0">
+                  for more queries about me<br>
+                  click here -->  <a href="https://Mans22r.github.io">Mans22r</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div id="tmContact" class="parallax-window" data-parallax="scroll" data-image-src="mini-profile-bg-02.jpg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="tm-contact-items-container">
+              <div class="tm-contact-item">
+                <center>
+                <i class="fa fa-music" style="font-size:100px; color: grey"></i>
+              </center>&nbsp;<br><br><br><br>
+                <a href="https://mans22r.github.io/piano/"><h4><center>PIANO</center></h4></a>
+                <p class="mb-0">
+                
+                </p>
+              </div>
+              <div class="tm-contact-item">
+                <center>
+                  <i class="fa fa-clock-o" style="font-size:100px;color:grey"></i>
+                </center>&nbsp;<br><br><br><br>
+                <a href="https://mans22r.github.io/stop_watch/"><h3><center>Stop Watch</center></h3></a>
+                <p class="mb-0">
+                  
+                </p>
+              </div>
+
+              <div class="tm-contact-item">
+                <center>
+                  <i class="material-icons" style="font-size:100px;color:grey">access_alarm</i>
+                </center>&nbsp;<br><br><br>
+                <a href="https://mans22r.github.io/alarm_clock/"><h3><center>alarm Clock</center></h3></a>
+                <p class="mb-0">
+                
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <footer class="col-12">
+            <p class="text-center tm-copyright-text">
+            Copyright 2021 - Mini Project (WebPage) 
+            
+            &nbsp;- Design: Mans22r</p>
+          </footer>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
+    <script>
+      function detectMsBrowser() {
+        using_ms_browser =
+          navigator.appName == "Microsoft Internet Explorer" ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Edge") > -1) ||
+          (navigator.appName == "Netscape" &&
+            navigator.appVersion.indexOf("Trident") > -1);
+
+        if (using_ms_browser == true) {
+          alert(
+            "Please use Chrome or Firefox for the best browsing experience!"
+          );
+        }
+      }
+      function setBrandMarginTop() {
+        var bottomContainerHeight = $(".tm-welcome-container").height();
+
+        $(".tm-brand-container-outer").css({
+          "margin-top": -bottomContainerHeight + "px"
+        });
+      }
+
+      $(function() {
+        setBrandMarginTop();
+        detectMsBrowser();
+
+        $(window).resize(function() {
+          setBrandMarginTop();
+        });
+      });
+    </script>
+  </body>
+</html>
