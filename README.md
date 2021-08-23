@@ -1,6 +1,5 @@
 # 3_in_1_website
-
-it is a webpage containing three features.<br>
+This is a webpage wthich containing three features.<br>
 *Musical Piano<br>
 *Stop Watch<br>
 *Alarm Clock<br>
